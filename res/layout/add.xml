@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.contacts.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#00bbff" android:id="@+id/relativeLayout1">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/save1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="新建信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/back" />
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/name" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/tel" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/sno" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bj" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/email" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/edit" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:ems="10"
+        android:maxLength="10"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:background="@null"
+        android:hint="姓名" >
+        <requestFocus />
+    </EditText>
+    
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:digits="1234567890"
+        android:maxLength="11"
+        android:background="@null"
+        android:hint="短号" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:digits="1234567890"
+        android:maxLength="15"
+        android:background="@null"
+        android:hint="学号" />
+    
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:background="@null"
+        android:hint="班级" />
+	<EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imageView5"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:background="@null"
+        android:hint="邮箱" />
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignTop="@+id/imageView6"
+        android:ems="10"
+        android:maxLength="50"
+        android:hint="其他信息" 
+        android:gravity="top"
+        android:background="@null">
+        
+    </EditText>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/imageView4"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_centerHorizontal="true"
+    android:background="#ddd" />
+	<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/imageView1"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_centerHorizontal="true"
+    android:background="#ddd" />
+	<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/imageView2"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_centerHorizontal="true"
+    android:background="#ddd" />
+	<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/imageView3"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_centerHorizontal="true"
+    android:background="#ddd" />
+	<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/imageView5"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_centerHorizontal="true"
+    android:background="#ddd" />
+
+</RelativeLayout>
+
